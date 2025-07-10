@@ -40,30 +40,31 @@
 }
 
 /* Responsive */
+/* 🔽 Mobile screens (max-width: 768px) */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+  }
+
   .menu-icon {
     display: block;
   }
 
   .nav-links {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background: #fff;
+    display: none;
     flex-direction: column;
-    align-items: flex-start;
-    width: 200px;
-    padding: 20px;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    margin-top: 10px;
+    gap: 15px;
   }
 
-  .nav-links.active {
-    transform: translateX(0);
+  .nav-links.open {
+    display: flex;
   }
 
   .nav-links li {
-    margin: 10px 0;
+    text-align: center;
   }
 }
 
@@ -111,6 +112,53 @@
   color: #ffcc00;
   text-decoration: underline;
 }
+/* 🔽 Tablet and below (768px) */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    background: #feffd8; /* Remove split background for small screens */
+    padding: 30px 15px;
+  }
+
+  .hero-name {
+    font-size: 2.5rem;
+  }
+
+  .hero-role {
+    font-size: 1.4rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* 🔽 Mobile devices (480px and below) */
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 20px 10px;
+  }
+
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .hero-role {
+    font-size: 1.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+
+  .typewriter {
+    display: block;
+    margin-top: 8px;
+    font-size: 1rem;
+  }
+}
+
 
 
 @keyframes fadeInUp {
@@ -215,6 +263,67 @@
   color: white;
 }
 
+/* 🔽 Tablet and below (max-width: 768px) */
+@media (max-width: 768px) {
+  .projects-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .project-desc,
+  .project-tech {
+    font-size: 0.95rem;
+  }
+
+  .link-btn {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* 🔽 Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .projects-section {
+    padding: 10px 8px;
+  }
+
+  .projects-heading {
+    font-size: 1.8rem;
+  }
+
+  .project-card {
+    padding: 16px;
+  }
+
+  .project-title {
+    font-size: 1rem;
+  }
+
+  .project-desc,
+  .project-tech {
+    font-size: 0.9rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .link-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+}
+
 
 .about-section {
   padding: 60px 20px;
@@ -266,32 +375,49 @@
 }
 
 
+/* 🔽 Tablet and below (max-width: 768px) */
 @media (max-width: 768px) {
   .about-wrapper {
     flex-direction: column;
     text-align: center;
+    gap: 30px;
   }
 
-  .about-content {
-    padding: 0 10px;
+  .about-image img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .about-content h2 {
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
   }
 }
 
-.about-heading {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #1a1a1a;
-  position: relative;
-}
+/* 🔽 Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 40px 15px;
+  }
 
-.about-heading::after {
-  content: '\002F';
-  display: block;
-  width: 60px;
-  height: 4px;
-  background-color: #d4af37;
-  margin: 10px auto 0;
+  .about-image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .about-content h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+
+  .about-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
 }
 
 
@@ -324,7 +450,7 @@
 }
 
 .skills-heading::after {
-  content: '\002F';
+  content: ' ';
   display: block;
   width: 60px;
   height: 4px;
@@ -365,6 +491,70 @@
   color: #333;
 }
 
+/* 🔽 Tablet screens and smaller (≤ 768px) */
+@media (max-width: 768px) {
+  .skills-heading {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+
+  .skills-heading::after {
+    width: 50px;
+    height: 3px;
+  }
+
+  .skills-grid {
+    gap: 16px;
+    padding: 0 10px;
+  }
+
+  .skill-card {
+    padding: 16px;
+  }
+
+  .skill-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .skill-name {
+    font-size: 0.95rem;
+  }
+}
+
+/* 🔽 Mobile screens (≤ 480px) */
+@media (max-width: 480px) {
+  .skills-section {
+    padding: 30px 10px;
+  }
+
+  .skills-heading {
+    font-size: 1.6rem;
+  }
+
+  .skills-heading::after {
+    width: 40px;
+    height: 2px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 12px;
+  }
+
+  .skill-card {
+    padding: 12px;
+  }
+
+  .skill-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .skill-name {
+    font-size: 0.9rem;
+  }
+}
 
 
 .contact-section {
@@ -379,7 +569,7 @@
   color: #1a1a1a;
 }
 .contact-heading::after {
-  content: '\002F';
+  content: ' ';
   display: block;
   width: 60px;
   height: 4px;
@@ -427,6 +617,68 @@
   background-color: #c49e2f;
 }
 
+/* 🔽 Tablet screens and smaller (≤ 768px) */
+@media (max-width: 768px) {
+  .contact-heading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .contact-heading::after {
+    width: 50px;
+    height: 3px;
+  }
+
+  .contact-form {
+    padding: 0 10px;
+    gap: 12px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+    padding: 10px 14px;
+  }
+
+  .submit-btn {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
+
+/* 🔽 Mobile screens (≤ 480px) */
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 50px 15px;
+  }
+
+  .contact-heading {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+
+  .contact-heading::after {
+    width: 40px;
+    height: 2px;
+  }
+
+  .contact-form {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .submit-btn {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
 
 @keyframes fadeInUp {
   from {
@@ -455,7 +707,7 @@
   color: #1a1a1a;
 }
 .edu-heading::after {
-  content: '\002F';
+  content: ' ';
   display: block;
   width: 60px;
   height: 4px;
@@ -521,4 +773,94 @@
   font-size: 0.95rem;
   color: #555;
   line-height: 1.6;
+}
+/* 🔽 Tablet and smaller (max-width: 768px) */
+@media (max-width: 768px) {
+  .edu-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .edu-heading::after {
+    width: 50px;
+    height: 3px;
+  }
+
+  .edu-grid {
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .edu-card {
+    padding: 25px 16px 16px;
+  }
+
+  .edu-icon-wrapper {
+    top: -25px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .edu-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .edu-degree {
+    font-size: 1.1rem;
+  }
+
+  .edu-institution,
+  .edu-desc,
+  .edu-year {
+    font-size: 0.9rem;
+  }
+}
+
+/* 🔽 Mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .edu-section {
+    padding: 40px 10px;
+  }
+
+  .edu-heading {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+  }
+
+  .edu-heading::after {
+    width: 40px;
+    height: 2px;
+  }
+
+  .edu-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .edu-card {
+    padding: 20px 14px 14px;
+  }
+
+  .edu-icon-wrapper {
+    top: -22px;
+    left: 14px;
+    width: 44px;
+    height: 44px;
+  }
+
+  .edu-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .edu-degree {
+    font-size: 1rem;
+  }
+
+  .edu-institution,
+  .edu-desc,
+  .edu-year {
+    font-size: 0.85rem;
+  }
 }
