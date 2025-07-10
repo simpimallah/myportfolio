@@ -16,8 +16,6 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="logo">...SIMPI...</div>
-      {/* <div className="logo">My Portfolio</div> */}
-
       <div className="menu-icon" onClick={toggleMenu}>
         ☰
       </div>

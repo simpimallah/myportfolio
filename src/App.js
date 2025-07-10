@@ -9,6 +9,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import './App.css';
 import './index.css';
+
 import Education from './components/Education';
 function App() {
   return (

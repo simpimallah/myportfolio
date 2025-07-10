@@ -67,14 +67,13 @@
   }
 }
 
-/* Hero.css */
+
 .hero-section {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 70vh;
-   background: linear-gradient(to right, #feffd8 50%, #fff 50%);
-  /* background: linear-gradient(to right, #eef1ff 50%, #fff 50%); */
+  background: linear-gradient(to right, #feffd8 50%, #fff 50%);
   padding: 40px 20px;
   text-align: center;
 }
@@ -114,7 +113,6 @@
 }
 
 
-/* Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -135,10 +133,10 @@
     transform: scale(1.05);
     color: #ffcc00;
   }
-} */
+} 
 
 
-/* Projects.css */
+
 
 .projects-section {
   padding: 5px 10px;
@@ -217,7 +215,7 @@
   color: white;
 }
 
-/* About.css */
+
 .about-section {
   padding: 60px 20px;
   background-color: #f7f7f7;
@@ -267,7 +265,7 @@
   font-weight: 600;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .about-wrapper {
     flex-direction: column;
@@ -288,7 +286,7 @@
 }
 
 .about-heading::after {
-  content: '';
+  content: '\002F';
   display: block;
   width: 60px;
   height: 4px;
@@ -296,46 +294,8 @@
   margin: 10px auto 0;
 }
 
-/* 
-.about-section {
-  padding: 80px 20px;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.about-container {
-  max-width: 900px;
-  text-align: center;
-  animation: fadeInUp 1s ease forwards;
-}
 
-.about-heading {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #1a1a1a;
-  position: relative;
-}
-
-.about-heading::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 4px;
-  background-color: #d4af37;
-  margin: 10px auto 0;
-}
-
-.about-text {
-  font-size: 1.125rem;
-  line-height: 1.8;
-  color: #555;
-  padding: 0 20px;
-} */
-
-/* Reuse animation from Hero.css */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -348,7 +308,7 @@
 }
 
 
-/* Skills.css */
+
 
 .skills-section {
   padding: 5px 10px;
@@ -364,7 +324,7 @@
 }
 
 .skills-heading::after {
-  content: '';
+  content: '\002F';
   display: block;
   width: 60px;
   height: 4px;
@@ -405,7 +365,7 @@
   color: #333;
 }
 
-/* Contact.css */
+
 
 .contact-section {
   padding: 80px 20px;
@@ -419,7 +379,7 @@
   color: #1a1a1a;
 }
 .contact-heading::after {
-  content: '';
+  content: '\002F';
   display: block;
   width: 60px;
   height: 4px;
@@ -467,7 +427,7 @@
   background-color: #c49e2f;
 }
 
-/* Optional animation */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -481,7 +441,7 @@
 
 
 
-/* Education.css */
+
 
 .edu-section {
   padding: 5px 10px;
@@ -495,7 +455,7 @@
   color: #1a1a1a;
 }
 .edu-heading::after {
-  content: '';
+  content: '\002F';
   display: block;
   width: 60px;
   height: 4px;

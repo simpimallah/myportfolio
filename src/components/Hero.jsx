@@ -1,5 +1,5 @@
 import React from 'react';
-// import './Hero.css';
+
 import { Typewriter } from 'react-simple-typewriter';
 const Hero = () => {
   return (
@@ -22,12 +22,6 @@ const Hero = () => {
           </span>
         </h2>
       </div>
-
-       
-      {/* Right Section */}
-      {/* <div className="hero-right">
-        <img src="/img/simpi.jpg" alt="Hero" className="hero-image" />
-      </div> */}
     </section>
   );
 };

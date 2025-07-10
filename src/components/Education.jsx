@@ -3,7 +3,7 @@ import React from 'react';
 
 const educationData = [
   {
-    icon: '/img/icons8-graduate-48.png', // Use your graduation hat icon
+    icon: '/img/icons8-graduate-48.png', 
     year: '2023–2025',
     degree: 'Master of Science in Information Technology',
     institution: 'G.R Patil Science & Commerce College, Dombivli',

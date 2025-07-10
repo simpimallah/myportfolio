@@ -1,8 +1,6 @@
-/* Global Layout */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+
 
 body {
   margin: 0;
@@ -24,20 +22,20 @@ h2 {
   margin-bottom: 40px;
 }
 
-/* Grid Example */
+
 .grid {
   display: grid;
   gap: 30px;
 }
 
-/* Flex Example */
+
 .flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* Reusable Button */
+
 .btn {
   background: #00bcd4;
   color: white;
@@ -48,14 +46,14 @@ h2 {
   display: inline-block;
 }
 
-/* Responsive Text/Container */
+
 .responsive-container {
   max-width: 1200px;
   padding: 0 20px;
   margin: auto;
 }
 
-/* Media Queries for Mobile */
+
 @media (max-width: 768px) {
   .flex {
     flex-direction: column;
