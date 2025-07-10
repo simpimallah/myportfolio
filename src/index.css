@@ -1,13 +1,77 @@
+/* Global Layout */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* Grid Example */
+.grid {
+  display: grid;
+  gap: 30px;
+}
+
+/* Flex Example */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Reusable Button */
+.btn {
+  background: #00bcd4;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* Responsive Text/Container */
+.responsive-container {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
 }
