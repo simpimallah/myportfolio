@@ -197,7 +197,14 @@
   margin-bottom: 10px;
   color: #1a1a1a;
 }
-
+.projects-heading::after {
+  content: ' ';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #d4af37;
+  margin: 10px auto 0;
+}
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -328,6 +335,23 @@
 .about-section {
   padding: 60px 20px;
   background-color: #f7f7f7;
+}
+
+.about-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  position: relative;
+}
+
+.about-heading::after {
+  content: ' ';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #d4af37;
+  margin: 10px auto 0;
 }
 
 .about-wrapper {
